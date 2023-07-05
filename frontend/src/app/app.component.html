@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+        <!--use routerLink directive to direct my specified route-->    
+            <a routerLink="employees" routerLinkActive="active" class="nav-link">Employee List</a>
+        </li>
+        <li class="nav-item">  
+            <a routerLink="create-employee" routerLinkActive="active" class="nav-link">Add Employee</a>
+        </li>
+        
+    </ul>
+</nav>
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+    <!-- directive is responsible for dynamically rendering the component 
+        associatedwith the currently activated route in the application.-->
+<router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <span>First full stack project @MANLIN</span>
+    </div>
+</footer>
